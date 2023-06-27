@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title></title>
+
+<head>
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            /* margin: 0 auto; */
+
+        }
+
+        #header ul {
+            display: flex;
+            justify-content: center;
+            padding-right: 30px;
+        }
+
+        #header ul li {
+            padding: 15px;
+        }
+
+        #header-top {
+            background: #fab1a0;
+            width: 175px;
+            border-radius: 11px;
+        }
+
+        #header-top:hover {
+            background: #0984e3;
+        }
+
+        .color-red {
+            color: #636e72;
+        }
+
+        #content {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+        }
+
+        #content-left {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            margin-left: 15px;
+        }
+
+        #content-right {
+            grid-column-start: 5;
+            grid-column-end: 10;
+
+        }
+
+        .chanel {
+            color: #95a5a6;
+        }
+
+        .title {
+            display: flex;
+            flex-wrap: nowrap;
+
+        }
+
+        .describe {
+            padding: 5px 0px;
+            width: 100%;
+        }
+
+        .fs-18 {
+            font-size: 18px;
+        }
+
+        .fb-bold {
+            font-weight: bold;
+        }
+
+        .fs-14 {
+            font-size: 14px;
+        }
+
+        .color-gray {
+            color: #636e72;
+        }
+
+        #footer h3 {
+            text-align: center;
+            padding: 30px
+        }
+
+        .header-link {
+            display: flex;
+            justify-content: space-around;
+            /* align-items: center; */
+        }
+
+        .header-link-firt a {
+            margin-right: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        a:hover {
+            color: #1abc9c;
+        }
+
+        @media (max-width: 500px) {
+            #content {
+
+                display: flex;
+               flex-direction: column;
+
+            }
+
+            #content-left ul {
+                display: flex;
+                flex-direction: column;
+                /* flex-wrap: wrap;  */
+
+            }
+
+            .header-link a {
+                width: calc(40% - 5px);
+                font-size: 15px;
+            }
+
+            #content-left ul li {
+                width: calc(49%-5px);
+                margin-left: 0;
+                display: flex;
+                /* justify-content: space-between; */
+                padding: 10px;
+
+            }
+
+           iframe.big {
+                width: 51%;
+            
+            }
+            #content-right{
+                width: calc(50%-5px);
+                margin-left: 0;
+                padding: 0px 23px ;
+             
+            }
+
+            p {
+                width: 100%;
+               
+            }
+            div.title{
+                display: flex;
+                justify-content: space-evenly;
+            }
+            div.title  p{
+                font-size: 15px;
+            }
+           
+            h3 {
+                font-size: 15px;
+            }
+
+            iframe {
+                width: 49%;
+                height: 20%;
+
+            }
+            .chanel p{
+                display: none;
+            }
+            div#header-top{
+                width: 100%;
+                background-color: #1abc9c;
+            }
+            h2{
+                font-size: 15px;
+                background: #1abc9c;
+            }
+          
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div id="header-top">
+                <h2 class="color-red"><i>Phim Hoạt Hình<i></h2>
+            </div>
+            <div id="header-bottom">
+                <ul>
+                    <li>
+                        <div class="header-link">
+                            <div class="header-link-firt">
+                                <a href="#" class="fs-18">Phim hoạt hình</a>
+                            </div>
+                            <div class="header-link-second">
+                                <span>|</span>
+                            </div>
+                        </div>
+
+
+                    </li>
+                    <li>
+                        <div class="header-link">
+                            <div class="header-link-firt">
+                                <a href="#" class="fs-18">Phim hoạt hình yêu thích</a>
+                            </div>
+                            <div class="header-link-second">
+                                <span>|</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="header-link">
+                            <div class="header-link-firt">
+                                <a href="#" class="fs-18">Nhân vật hoạt hình</a>
+                            </div>
+                            <div class="header-link-second">
+                                <span>|</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="header-link">
+                            <div class="header-link-firt">
+                                <a href="#" class="fs-18">Góp ý</a>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="content">
+            <div id="content-left">
+                <ul>
+                    <li>
+
+                        <iframe width="450" height="200" src="https://www.youtube.com/embed/tcu3_KGsLwU"
+                            title="Tất Tần Tật Sự Thật Về Uchiha Obito - Kẻ Lạc Lối Đáng Thương? I Khám Phá Naruto"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+
+                        <div class="title">
+                            <p class=" fs-18 fb-bold">Kẻ lạc lối đáng thương Uchiha <span class=" fs-14 color-gray"> -
+                                    5,147,528 lượt xem</span></p>
+                                    
+                                  
+                        </div>
+                        <div class="chanel fs-14">
+                            <p>Naruto VietSub</p>
+
+                        </div>
+                       
+
+                    </li>
+                    <li>
+
+                        <iframe width="450" height="200" src="https://www.youtube.com/embed/i0hf19Qm_Sc"
+                            title="LONELINESS // OBITO" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+
+                        <div class="title">
+                            <p class="fs-18 fb-bold">LONELINESS // Obito <span class="fs-14 color-gray"> - 5,147,528
+                                    lượt xem</span></p>
+                        </div>
+                        <div class="chanel fs-14">
+                            <p>Naruto VietSub</p>
+                        </div>
+
+                    </li>
+                    <li><iframe width="450" height="200" src="https://www.youtube.com/embed/D0pq-pogoso"
+                            title="Naruto Shippuden Tập 378 - Nhân Trụ Lực Của Thập Vĩ - Trọn Bộ Naruto Bản Lồng Tiếng"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <div class="title">
+                            <p class="fs-18 fb-bold">Naruto Shippuden Tập 378 - Nhân Trụ Lực Của Thập Vĩ<span
+                                    class="fs-14 color-gray"> - 5,147,528 lượt xem</span></p>
+
+                        </div>
+                        <div class="chanel fs-14">
+                            <p>
+                                Naruto VietSub
+                            </p>
+                        </div>
+                    </li>
+                    <li><iframe width="450" height="200" src="https://www.youtube.com/embed/YefhJ6EzWGw"
+                            title="OBITO UCHIHA // XXXTENTACION - I Don&#39;t Wanna Do This Anymore" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <div class="title">
+                            <p class="fs-18 fb-bold">OBITO UCHIHA // XXXTENTACION - I Don&#39;t Wanna Do This
+                                Anymore<span class="fs-14 color-gray"> - 5,147,528 lượt xem</span></p>
+                        </div>
+                        <div class="chanel fs-14">
+                            <p>
+                                Naruto VietSub
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="content-right">
+                <iframe width="850" height="470" class="big"
+                    src="https://www.youtube.com/embed/pT9ZKB4nygw?list=PLKvoOwlacRoIX0Jp34PQAL7McZn4lga57"
+                    title="Naruto | Trailer - Đón Xem Siêu Phẩm Anime" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <div class="title">
+                    <p class="fs-18 fb-bold">Naruto | Trailer - Đón Xem Siêu Phẩm Anime<span class="fs-14 color-gray"> -
+                            5,147,528 lượt xem</span></p>
+                </div>
+                <div class="chanel">
+                    <p>Tác giả </p>
+                </div>
+                <div class="describe">
+                    <p class="fs-14 color-gray"> Naruto Shippuden hay còn được gọi với cái tên quen thuộc Naruto phần 2
+                        là phần tiếp theo của bộ
+                        phim hoạt hình nổi tiếng Naruto, lấy bối cảnh hai năm rưỡi sau khi Naruto rời làng Lá. Naruto
+                        Shippuden tiếp tục theo chân chàng ninja trẻ tuổi Naruto Uzumaki trong cuộc hành trình luyện tập
+                        cực khổ để trở thành ninja giỏi nhất. Trong khi đó, Akatsuki, một tổ chức bí ẩn tập hợp những
+                        ninja phản diện tài giỏi bậc nhất, đang từng bước thực hiện kế hoạch lớn của chúng, đe dọa sự an
+                        toàn của thế giới ninja. Naruto sẽ làm gì để bảo vệ làng Lá và những người mà cậu yêu quý?
+
+                        Xem phim Naruto Shippuden lồng tiếng online ngay tại POPS - ứng dụng giải trí hàng đầu sở hữu
+                        hàng trăm bộ anime mới và hot nhất hiện nay. Khán giả có thể thoải mái xem các bộ anime bản
+                        quyền tại POPS với hình ảnh sắc nét và âm thanh sống động. Mở ngay ứng dụng giải trí POPS để xem
+                        phim hoạt hình Naruto Shippuden - Naruto P2 tiếng Việt siêu hay.</p>
+                </div>
+
+            </div>
+        </div>
+        <div id="footer">
+            <h3>
+                © Toàn bộ bản quyền thuộc Tri thức trực tuyến
+            </h3>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+<!-- fieldset legend để bọc -->

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title></title>
+
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+       
+    }
+
+
+
+    /* #header ul li {
+        display: inline-block;
+        color: #b2bec3;
+        padding: 0px 20px;
+        vertical-align: middle; 
+        text-align: center;
+    } */
+    #header-left ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    #header {
+        display: flex;
+        background-color: #353b48;
+        justify-content: space-between;
+    }
+
+    #header-right {
+        display: flex;
+        align-items: center;
+    }
+
+    #header-right p {
+        padding: 0px 20px 0px 5px;
+        color: #b2bec3;
+    }
+
+    #header-right i {
+        color: #b2bec3;
+    }
+
+    #footer {
+
+        background-color: #353b48;
+        min-height: 50px;
+        padding: 20px;
+
+
+    }
+
+    #footer p {
+        color: whitesmoke;
+        text-align: center;
+    }
+
+    #wp-content {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        min-height: 500px;
+    }
+
+    #sidebar-left {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #content {
+        grid-column-start: 3;
+        grid-column-end: 11;
+    }
+
+    #first-content {
+        border-bottom: 1px solid #b2bec3;
+        padding-bottom: 20px;
+    }
+
+    #sidebar-right {
+        grid-column-start: 11;
+        grid-column-end: 13;
+    }
+
+    #second-content {
+        padding-top: 50px;
+    }   
+
+    #header-left ul {
+        background-color: #353b48;
+        text-align: center;
+
+    }
+
+    #header-left ul li {
+        display: inline-block;
+        padding: 20px;
+        color: #b2bec3;
+        position: relative;
+    }
+
+    #header-left ul li ul {
+        background-color: #b2bec3;
+
+        /*//k hien thi*/
+        display: none;
+    }
+
+    /*dua chuot vao the li nao thi the LI do đổi màu*/
+    ul li:hover {
+        background-color: #2d3436;
+    }
+
+    /*dua chuot(hover) vao the Li nào thi hien thi UL con cua no ra*/
+    #header-left ul li:hover ul {
+        /*hien thi ra*/
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+
+    }
+
+    #header-left ul li:hover ul li {
+        color: blue;
+        text-align: center;
+        padding: 10px 0px;
+
+
+    }
+
+    #header ul li ul li {
+        display: block;
+        text-align: left;
+        border-bottom: 1px solid blue;
+
+
+    }
+
+    @media only screen and (max-width:360px) {
+        #header ul li {
+            background-color: blue;
+
+
+        }
+    }
+</style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div id="header-left">
+                <ul>
+                    <li>Logo
+                        <!--  -->
+                        <ul>
+                            <li>link</li>
+                            <li>link</li>
+                            <li>link</li>
+                            <li>link</li>
+                        </ul>
+                        <!--  -->
+                    </li>
+                    <li>Home
+                        <ul>
+                            <li>link</li>
+                            <li>link</li>
+                            <li>link</li>
+                            <li>link</li>
+                        </ul>
+                    </li>
+                    <li>About
+                        <ul>
+                            <li>link</li>
+                            <li>link</li>
+                            <li>link</li>
+                            <li>link</li>
+                        </ul>
+                    </li>
+                    <li>Project
+                        <!--  -->
+                        <ul>
+                            <li>link</li>
+                            <li>link</li>
+                            <li>link</li>
+                            <li>link</li>
+                        </ul>
+                        <!--  -->
+                    </li>
+                    <li>Contract
+                        <ul>
+                            <li>link</li>
+                            <li>link</li>
+                            <li>link</li>
+                            <li>link</li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div id="header-right">
+                <i class="fa-solid fa-light fa-right-to-bracket"></i>
+
+                <p>Login</p>
+            </div>
+        </div>
+
+        <div id="wp-content">
+            <div id="sidebar-left">
+
+            </div>
+            <div id="content">
+                <div id="first-content">
+                    <h1>Welcome</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.</p>
+                </div>
+                <div id="second-content">
+                    <h2>Test</h2>
+                    <p>Lorem ipsum...</p>
+                </div>
+            </div>
+            <div id="sidebar-right">
+
+            </div>
+
+        </div>
+        <div id="footer">
+            <p>Footer text</p>
+        </div>
+    </div>
+</body>
+
+</html>
